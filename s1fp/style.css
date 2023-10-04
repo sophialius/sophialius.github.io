@@ -1,0 +1,68 @@
+#body {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+#title {
+    position: absolute;
+    top: calc(50vh - 370px);
+    left: calc(50vw - 300px);
+    font-size: 50px;
+}
+
+#title2 {
+    position: absolute;
+    top: calc(50vh - 300px);
+    left: calc(50vw - 120px);
+    font-size: 20px;
+}
+
+#wrapper {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: calc(50vh - 300px);
+    left: calc(50vw - 300px);
+    background-color: transparent;
+}
+
+#armoireremoved{
+    position: absolute;
+    pointer-events: none;
+}
+
+#armoirecontents {
+    background-image: url("Armoire_contents.png");
+    width: 600px;
+    height: 500px;
+    margin-top: 1px;
+    margin-left: px;
+  }
+  
+  #armoirecontents:hover {
+    animation: flashingarmoire 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes flashingarmoire {
+    0% {background-image: url("space.png");}
+    9% {background-image: url("space.png");}
+    10% {background-image: url("sea.png")}
+    19% {background-image: url("sea.png");}
+    20% {background-image: url("charlesaddams.png")}
+    29% {background-image: url("charlesaddams.png");}
+    30% {background-image: url("candyland.png")}
+    39% {background-image: url("candyland.png");}
+    40% {background-image: url("dentist.png")}
+    49% {background-image: url("dentist.png");} 
+    50% {background-image: url("bed.png")}
+    59% {background-image: url("bed.png");}
+    60% {background-image: url("hell.png")}
+    69% {background-image: url("hell.png");}
+    70% {background-image: url("bagcloset.png")}
+    79% {background-image: url("bagcloset.png");}
+    80% {background-image: url("beach.png")}
+    89% {background-image: url("beach.png");} 
+    90% {background-image: url("bakery.png")}
+    99% {background-image: url("bakery.png");}
+  }
