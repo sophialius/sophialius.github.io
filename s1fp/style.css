@@ -440,3 +440,12 @@
        background-color: rgb(211,223,181);
        text-align: center;
    }
+
+#bottomtext {
+    position: absolute;
+    top: calc(50vh + 330px);
+    left: calc(50vw - 220px);
+    font-size: 14px;
+    color: blue;
+
+}
