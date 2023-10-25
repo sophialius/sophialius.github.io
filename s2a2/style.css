@@ -53,11 +53,11 @@
 }
 
 #flex2 {
-    height: 125vh;
+    height: 12vh;
     width: 25vw;
     position: absolute;
     margin-left: 40vw;
-    margin-top: -3vh;
+    margin-top: 40vh;
     background-color: transparent;
     display: flex;
     justify-content: space-evenly;
