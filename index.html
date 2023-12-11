@@ -1,45 +1,94 @@
+<!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+    }
 
-<img id="katamari_title" src="katamari_title.png" alt="Katamari Damacy logo"> 
+    #container {
+      position: relative;
+    }
 
-<div class="flex">
-    <div class="prince-container">
-        <div id="princetext"> When his father accidentally destroys all the stars in a 
-            drunken jamboree, Our Little Prince is tasked with rolling up chaos to restore our 
-            night-time sky.
-        </div>       
-        <img id="flexprince" src="prince.gif" alt="The Little Prince - suave, green, 
-        and possessing a pill-shaped head - steadily treks onwards with much to do."> 
-         
+    #textTop, #textBottom {
+      position: absolute;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    #textTop {
+      background-color: red;
+    }
+
+    #textBottom {
+      background-color: #3498db;
+    }
+  </style>
+</head>
+<body>
+  <div id="box-container">
+    <div id="top-box">
+
+  <div id="textTop">Do you want pale lips?</div>
     </div>
-    <div class="miso-container">
-        <div id="misotext"> Miso loves to drink coffee while
-            looking pensive and comtemplative. In reality, her head is completely empty (besides miso soup).
-        </div>   
-        <img id="flexmiso" src="miso.gif" alt="Miso, a warm cousin of the Little Prince, sips on coffee
-        while miso soup spills from her cup-shaped head."> 
+    <div id="bottom-box">
+
+  <div id="textBottom">Lashes don't paint themselves, y'know?</div>
     </div>
-    <div class="nik-container">
-        <div id="niktext"> Nik loves to eat. He's mastered the art of talking with a full
-            mouth. His name is dervied from the Japanese word for meat, niku.
-        </div>   
-        <img id="flexnik" src="nik.gif" alt="Nik, the chubbiest cousin of the Little Prince, gnaws
-        vigorously on a drumstick.">
-     
-    </div>
-</div>
+  </div>
+  <div id="container">
+  </div>
 
-<div id="flex2">
-    <img id="katamariball" src="katamariball.png" class="spin" alt="A pink katamari ball, used to pick up
-    various goodies on earth, steadily rotates in place.">
-</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script>
+    let faceImage;
+    let randomColor;
 
-<div id="flex3">
-    <img id="tempura" src="tempura.png" class="spin" alt="Two perfectly fried shrimp tempuras
-    rotate in harmony.">
-</div>
+    function preload() {
+      faceImage = loadImage('https://sophialius.github.io/background.png');
+    }
 
-<div id="flex4">
-    <img id="cow" src="cow.png" class="spin" alt="A tremendously large cow rotates at the bottom
-    of the screen.">
-</div>
+    function setup() {
+      createCanvas(window.innerWidth, window.innerHeight);
+
+      let x = window.innerWidth / 2 - 300;
+      let y = window.innerHeight / 2 - 300;
+
+      image(faceImage, x, y, 600, 600);
+
+      // Store a random color for strokes above the center
+      randomColor = color(random(255), random(255), random(255), 80);
+    }
+
+    function draw() {
+      if (mouseY < height / 2) {
+        cursor('https://sophialius.github.io/small_mascara.png');
+        
+      } else {
+        cursor('https://sophialius.github.io/medium_lipstick.png');
+      
+      }
+    }
+
+    function mouseDragged() {
+      if (mouseY < height / 2) {
+        stroke(randomColor);
+      } else {
+        stroke(255, 0, 0, 80);
+      }
+
+      strokeWeight(10);
+      strokeCap(ROUND);
+      strokeJoin(ROUND);
+
+      line(pmouseX, pmouseY, mouseX, mouseY);
+
+      return false;
+    }
+  </script>
+</body>
+</html>
