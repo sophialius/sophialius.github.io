@@ -1,0 +1,25 @@
+#box-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#top-box {
+    height: 50%;
+}
+
+#bottom-box {
+    height: 50%;
+}
+
+#bottom-box:hover > div {
+    display: none;
+}
+
+#top-box:hover > div {
+    display: none;
+}
+
+#textBottom {
+    bottom: 0;
+}
