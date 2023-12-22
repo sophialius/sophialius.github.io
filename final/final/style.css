@@ -1,0 +1,281 @@
+.container1 {
+    float: left;
+    font-family: 'Bai Jamjuree';
+    width: 80%;
+    line-height: 15px;
+    padding-left: 10px;
+    }
+
+    a, a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+        text-decoration: underline;
+    }
+
+.container2 {
+    float: left;
+    font-family: 'Bai Jamjuree';
+    width: 60%;
+    line-height: 15px;
+    }
+
+    #one-image {
+        display: none;
+        height: auto;
+    }
+
+    #two-image {
+        display: none;
+        height: auto;
+    }
+
+    #three-image {
+        display: none;
+        height: auto;
+    }
+
+    #four-image {
+        display: none;
+        height: auto;
+    }
+
+    #five-image {
+        display: none;
+        height: auto;
+    }
+
+    #six-image {
+        display: none;
+        height: auto;
+    }
+
+    #seven-image {
+        display: none;
+        height: auto;
+    }
+
+    #eight-image {
+        display: none;
+        height: auto;
+    }
+
+    #nine-image {
+        display: none;
+        height: auto;
+    }
+
+
+    #cat {
+    width: 600px;
+    height: auto;
+    padding-left: 600px;
+    margin-top: -500px;
+    }
+
+    #jester {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -450px;
+    }
+
+    #narnia {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -450px;
+    }
+
+    #ring {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -550px;
+    }
+
+    #katamari {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -500px;
+    }
+
+    #love {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -450px;
+    }
+
+    #soup {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -500px;
+    }
+
+    #life {
+    width: 600px;
+    height: auto;
+    padding-left: 600px; 
+    margin-top: -500px;
+    }
+
+    #clown {
+    width: 300px;
+    height: auto;
+    padding-left: 750px; 
+    margin-top: -500px;
+    }
+
+#one-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#one:target ~ #one-info{
+    display: block;
+    }
+
+#one:hover ~ #one-image {
+    display: block;
+}
+
+#two-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#two:target ~ #two-info{
+    display: block;
+}
+
+#two:hover ~ #two-image {
+    display: block;
+}
+
+#three-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#three:target ~ #three-info{
+    display: block;
+}
+
+#three:hover ~ #three-image {
+    display: block;
+}
+
+#four-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#four:target ~ #four-info{
+    display: block;
+}
+
+#four:hover ~ #four-image {
+    display: block;
+}
+
+#five-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#five:target ~ #five-info{
+    display: block;
+}
+
+#five:hover ~ #five-image {
+    display: block;
+}
+
+#six-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#six:target ~ #six-info{
+    display: block;
+}
+
+#six:hover ~ #six-image {
+    display: block;
+}
+
+#seven-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#seven:target ~ #seven-info{
+    display: block;
+}
+
+#seven:hover ~ #seven-image {
+    display: block;
+}
+
+#eight-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#eight:target ~ #eight-info{
+    display: block;
+}
+
+#eight:hover ~ #eight-image {
+    display: block;
+}
+
+#nine-info {
+    display:none;
+    margin-top: -650px;
+    margin-left: 600px;
+    }
+    
+#nine:target ~ #nine-info{
+    display: block;
+}
+
+#nine:hover ~ #nine-image {
+    display: block;
+}
+
+
+.cursor-trail {
+    position: absolute;
+    color: #000; 
+    font-family: 'Bai Jamjuree';
+    font-size: 16px; 
+    pointer-events: none;
+    z-index: 1; 
+}
+
+#one-image,
+#two-image,
+#three-image,
+#four-image,
+#five-image,
+#six-image,
+#seven-image,
+#eight-image,
+#nine-image
+{
+    z-index: 2; 
+}
