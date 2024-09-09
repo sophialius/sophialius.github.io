@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    width: 350px;
+    height: 750px;
+    background-color: #02476c;
+    background-image: linear-gradient(#02476c, rgb(77, 194, 220));
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+
+#header h1 {
+    font-weight: 400; 
+    padding-left: 20px;
+    padding-top: 60px;
+    color: white;
+}
+
+#weather-card {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #66a0be;
+    align-items: center;
+    margin-top: 10px;
+    filter: drop-shadow(5px 3px 3px #033957);
+    
+}
+
+#location {
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+#weather-info {
+    padding-left: 20px;
+    color: #e9e9c0;
+}
+
+#weather-info h2 {
+    font-weight: 400;
+    font-size: 13.5px;
+    margin-top: px;
+}
+
+#weather-info h3 {
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: -15px;
+}
+
+#details p {
+    margin-top: -18px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#cloud {
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+
+#cloud-image {
+    width: 110px;
+    height: 110px;
+}
+
+#details1 p {
+    margin-top: -18px;
+    font-size: 13.5px;
+    font-weight: 400;
+    margin-left: 15px;
+    color:#e9e9c0;
+}
+
+#conditions-mimic h2 {
+    font-weight: 400; 
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#event-card {
+    display: flex;
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+    background-color: #e9e9c0;
+    align-items: center;
+    margin-top: 10px;
+    filter: drop-shadow(5px 3px 3px #046294);
+    margin-left: 20px;
+    
+}
+
+#event-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -5px;
+    margin-left: 20px;
+    line-height: 16px;
+    color: #003c5c;
+}
+
+#event-card p {
+    font-size: 11px;
+    margin-top: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    
+}
+
+
+
+#event-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    
+}
+
+#read-more {
+    color: #ae8e00;
+    font-size: 12px;
+    text-decoration: underline;
+    padding-left: 42px;
+    margin-top: 10px;
+}
+
+#dance-wiki {
+    width: 350px;
+}
+
+#emu-wiki {
+    width: 350px;
+}
+
+#blurb {
+    margin-left: 400px;
+    margin-top: -600px;
+}
